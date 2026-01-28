@@ -16,7 +16,7 @@
 
 Bridgetown.configure do |config|
   # The base hostname & protocol for your site, e.g. https://example.com
-  url ""
+  url "https://akashi-rb.com"
 
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
@@ -26,7 +26,7 @@ Bridgetown.configure do |config|
   # See list of timezone values here:
   # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   #
-  # timezone "America/Los_Angeles"
+  timezone "JP"
 
   # Add collection pagination features to your site. Documentation here:
   # https://www.bridgetownrb.com/docs/content/pagination

@@ -4,8 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Your awesome title
-tagline: This site is totally awesome
-email: your-email@example.com
+title: AKASHI.rb
+tagline: 明石周辺のRubyistが集まるコミュニティ
 description: >-
-  Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  兵庫県明石市を中心に活動するRubyコミュニティ「AKASHI.rb」の公式サイトです。Rubyや周辺技術についてゆるく楽しく共有しています。
