@@ -4,6 +4,12 @@
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
   <body class="<%= data.layout %> <%= data.page_class %>">
+    <% if site.metadata.gtm_id %>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= site.metadata.gtm_id %>"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <% end %>
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
     <main>
