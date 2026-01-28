@@ -196,7 +196,72 @@ hr {
   color: #333;
 }
 
-.text-link {
-  font-size: 1.2rem;
+
+/* Organizer Profile */
+.organizer-profile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.organizer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.organizer-image-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.organizer-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.organizer-info {
+  text-align: center;
+}
+
+.organizer-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.organizer-title {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
   font-weight: bold;
+}
+
+.organizer-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.organizer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.organizer-social a {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
