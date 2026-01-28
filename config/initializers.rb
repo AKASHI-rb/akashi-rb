@@ -46,7 +46,7 @@ Bridgetown.configure do |config|
   # If you're using esbuild for frontend assets, edit `esbuild.config.js` to
   # update `publicPath`.
   #
-  # base_path "/"
+  base_path "/akashi-rb"
 
   # You can also modify options on this configuration object directly, like so:
   #
