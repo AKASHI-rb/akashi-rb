@@ -34,7 +34,7 @@ layout: default
       </div>
       <div class="feature-item">
         <h3>💎 Ruby</h3>
-        <p>Rubyが好きな人が集まる場所です。</p>
+        <p>Rubyを中心に、様々な技術や話題を楽しめる場所です。</p>
       </div>
     </div>
   </div>
