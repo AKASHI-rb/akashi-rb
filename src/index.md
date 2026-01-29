@@ -7,7 +7,7 @@ layout: default
     <h1 class="hero-title">AKASHI.rb</h1>
     <p class="hero-subtitle">明石ではじめる、Rubyとコミュニティ</p>
     <div class="hero-actions">
-      <a href="https://akashi-rb.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener">イベントに参加する</a>
+      <a href="https://akashi-rb.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener">Connpassグループに参加</a>
       <a href="https://discord.gg/ByADuJYKnj" class="btn btn-secondary" target="_blank" rel="noopener">Discordに参加</a>
     </div>
   </div>
@@ -37,6 +37,19 @@ layout: default
         <p>Rubyを中心に、様々な技術や話題を楽しめる場所です。</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section next-event">
+  <div class="container">
+    <h2 class="section-title">Next Event</h2>
+    <p class="section-text">
+      次回、AKASHI.rb #16 の開催が決定しました！<br>
+      明石周辺のエンジニアの皆様、ぜひお気軽にご参加ください。
+    </p>
+    <a href="https://akashi-rb.connpass.com/event/382873/" class="btn btn-primary" target="_blank" rel="noopener">
+      イベント詳細・申込 (Connpass)
+    </a>
   </div>
 </section>
 
