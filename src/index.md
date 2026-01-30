@@ -7,7 +7,7 @@ layout: default
     <h1 class="hero-title">AKASHI.rb</h1>
     <p class="hero-subtitle">明石ではじめる、Rubyとコミュニティ</p>
     <div class="hero-actions">
-      <a href="https://akashi-rb.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener">Connpassグループに参加</a>
+      <a href="https://akashi-rb.connpass.com/" class="btn btn-primary" target="_blank" rel="noopener">Connpassに参加</a>
       <a href="https://discord.gg/ByADuJYKnj" class="btn btn-secondary" target="_blank" rel="noopener">Discordに参加</a>
     </div>
   </div>
