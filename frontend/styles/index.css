@@ -313,4 +313,18 @@ hr {
 .organizer-social a {
   font-weight: bold;
   font-size: 1.1rem;
+  color: black;
+  color: black;
+}
+
+.footer-github-icon {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.footer-github-icon svg {
+  width: 48px;
+  height: 48px;
 }
