@@ -39,7 +39,7 @@ bundle exec rake test             # BRIDGETOWN_ENV=test でビルド
 
 トップレベルのページ（`src/index.md`、`venue.md`、`organizers.md`、`code-of-conduct.md`、`stats.md`）は Markdown ファイルだが、中身は Markdown の文章ではなく生の HTML セクション（`<section class="section">…`）で書かれている。ページを追加するときもこの書き方に合わせ、`navbar.erb` にリンクを追加すること。
 
-定期的に発生する編集は `src/index.md` の "Next Event" セクション（開催回の番号と Connpass のイベント URL）の更新。コミット "meetup #17" などが該当する。
+定期的に発生する編集は `src/index.md` の "Next Event" セクション（開催回の番号と Connpass のイベント URL）の更新。コミット "meetup #17" などが該当する。この更新は `.claude/skills/meetup-update/SKILL.md`（スキル `meetup-update`）に手順化してある。
 
 ### スタイル
 
