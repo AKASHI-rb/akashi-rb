@@ -4,14 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## プロジェクト概要
 
-兵庫県明石市のRubyコミュニティ「AKASHI.rb」の公式サイト。**Bridgetown 2.1**（Ruby製静的サイトジェネレータ）と esbuild / PostCSS で構築されている。本文コンテンツは日本語、ページタイトルとナビゲーションのラベルは英語。
+兵庫県明石市のRubyコミュニティ「AKASHI.rb」の公式サイト。**Bridgetown 2.2**（Ruby製静的サイトジェネレータ）と esbuild / PostCSS で構築されている。本文コンテンツは日本語、ページタイトルとナビゲーションのラベルは英語。
 
 公開先は https://akashi-rb.com （GitHub Pages）。
 
 ## コマンド
 
 ```sh
-bundle install && npm install     # 初回セットアップ（.ruby-version は 4.0.1、Node は 20 以上）
+bundle install && npm install     # 初回セットアップ（.ruby-version は 4.0.1、Node は 22 以上）
 
 bin/bridgetown start              # 開発サーバー localhost:4000（Puma/Roda + esbuild watch + ライブリロード）
 bin/bridgetown console            # サイトをロードした状態の IRB
