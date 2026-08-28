@@ -33,11 +33,13 @@ WebFetch の結果が曖昧・不完全なときは、番号・日付・URL の�
 `src/index.md` の `<section class="section next-event">` 内、2箇所だけを書き換える:
 
 ```html
-      次回、AKASHI.rb #22 の開催が決定しました！<br>
+          次回、AKASHI.rb #22 の開催が決定しました！<br>
 ```
 ```html
-    <a href="https://akashi-rb.connpass.com/event/403363/" class="btn btn-primary" target="_blank" rel="noopener">
+        <a href="https://akashi-rb.connpass.com/event/403363/" class="btn btn-primary" target="_blank" rel="noopener">
 ```
+
+前者は `<p class="event-headline">` の中、後者は `<div class="event-actions">` の中にある。
 
 - 見出し文の `#XX` を新しい開催回番号に（サイト表記は `AKASHI.rb #22` で、`Meetup` は入れない）。
 - `href` を新しいイベント URL に。末尾のスラッシュ込みで統一する。

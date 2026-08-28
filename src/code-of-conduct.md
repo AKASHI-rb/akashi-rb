@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Code of Conduct
+subtitle: 行動規範
+container_class: prose
 ---
-
-# 行動規範 (Code of Conduct)
 
 AKASHI.rb は、参加者全員が歓迎され、安心して過ごせるコミュニティを目指しています。
 私たちは、性別、性的指向、障害、外見、身体的特徴、人種、宗教にかかわらず、誰にとってもハラスメントのないコミュニティ体験を提供することに尽力します。

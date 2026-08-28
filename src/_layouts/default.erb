@@ -10,9 +10,11 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <% end %>
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
+
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
-    <main>
+    <main id="main-content">
       <%= yield %>
     </main>
 
