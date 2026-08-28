@@ -1,18 +1,23 @@
-<header>
-  <div class="header-logo-wrapper">
-    <a href="<%= relative_url '/' %>">
-      <img src="<%= relative_url '/images/AKASHI_rb.png' %>" alt="AKASHI.rb" class="header-logo-img" />
+<header class="masthead">
+  <div class="container">
+    <a href="<%= relative_url '/' %>" class="masthead-logo" aria-label="AKASHI.rb ホームへ">
+      <img src="<%= relative_url '/images/AKASHI_rb.png' %>"
+           alt="AKASHI.rb"
+           width="216" height="216"
+           class="masthead-logo-img" />
     </a>
+    <p class="masthead-tagline"><%= @metadata.tagline %></p>
   </div>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="<%= relative_url '/' %>">Home</a></li>
-    <li><a href="<%= relative_url '/organizers' %>">Organizers</a></li>
-    <li><a href="<%= relative_url '/venue' %>">Venue</a></li>
-    <li><a href="<%= relative_url '/code-of-conduct' %>">Code of Conduct</a></li>
-    <li><a href="<%= relative_url '/stats' %>">Stats</a></li>
-  </ul>
+<nav class="site-nav" aria-label="サイト内ナビゲーション">
+  <div class="container">
+    <ul>
+      <% links.each do |link| %>
+        <li>
+          <a href="<%= relative_url link[:path] %>" <% if current?(link[:path]) %>aria-current="page"<% end %>><%= link[:label] %></a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </nav>
-

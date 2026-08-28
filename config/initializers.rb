@@ -21,6 +21,10 @@ Bridgetown.configure do |config|
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
 
+  # The site is written in Japanese; this drives <html lang>.
+  default_locale :ja
+  available_locales [:ja]
+
   # Other options you might want to investigate:
 
   # See list of timezone values here:
