@@ -44,10 +44,10 @@ layout: default
   <div class="container">
     <h2 class="section-title">Next Event</h2>
     <p class="section-text">
-      次回、AKASHI.rb #22 の開催が決定しました！<br>
+      次回、AKASHI.rb #23 の開催が決定しました！<br>
       明石周辺のエンジニアの皆様、ぜひお気軽にご参加ください。
     </p>
-    <a href="https://akashi-rb.connpass.com/event/403363/" class="btn btn-primary" target="_blank" rel="noopener">
+    <a href="https://akashi-rb.connpass.com/event/403378/" class="btn btn-primary" target="_blank" rel="noopener">
       イベント詳細・申込 (Connpass)
     </a>
   </div>
