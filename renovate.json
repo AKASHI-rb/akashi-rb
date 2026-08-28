@@ -1,6 +1,91 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":dependencyDashboard",
+    ":rebaseStalePrs"
+  ],
+  "timezone": "Asia/Tokyo",
+  "labels": ["dependencies"],
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "configMigration": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 6am on monday"],
+    "automerge": true
+  },
+  "vulnerabilityAlerts": {
+    "minimumReleaseAge": null,
+    "labels": ["dependencies", "security"]
+  },
+  "packageRules": [
+    {
+      "description": "GitHub Actions: patch/minor はまとめて自動マージ",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "groupName": "github-actions (non-major)",
+      "addLabels": ["github-actions"],
+      "automerge": true
+    },
+    {
+      "description": "GitHub Actions: major は手動レビュー（deploy 系は PR の CI で検証できないため）",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["major"],
+      "addLabels": ["github-actions"],
+      "automerge": false
+    },
+    {
+      "description": "npm: package.json のレンジも常に追従させる",
+      "matchManagers": ["npm"],
+      "rangeStrategy": "bump",
+      "addLabels": ["javascript"]
+    },
+    {
+      "description": "npm devDependencies: patch/minor はまとめて自動マージ（CI のビルドが通れば）",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "npm devDependencies (non-major)",
+      "automerge": true
+    },
+    {
+      "description": "PostCSS / Tailwind まわりは連動するのでまとめる",
+      "matchManagers": ["npm"],
+      "matchPackageNames": [
+        "tailwindcss",
+        "@tailwindcss/postcss",
+        "postcss",
+        "postcss-**"
+      ],
+      "groupName": "tailwind & postcss"
+    },
+    {
+      "description": "npm major は個別 PR で手動レビュー",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "description": "gem は自動マージせず手動レビュー",
+      "matchManagers": ["bundler"],
+      "addLabels": ["ruby"],
+      "automerge": false
+    },
+    {
+      "description": "Bridgetown 本体と公式プラグインはまとめて更新",
+      "matchManagers": ["bundler"],
+      "matchPackageNames": ["bridgetown", "bridgetown-**"],
+      "groupName": "bridgetown"
+    },
+    {
+      "description": "Ruby 本体 (.ruby-version) は単独 PR で慎重に",
+      "matchManagers": ["ruby-version"],
+      "addLabels": ["ruby"],
+      "minimumReleaseAge": "14 days",
+      "automerge": false
+    }
   ]
 }
